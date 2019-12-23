@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Научиться учиться</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <img class="logo logo_header" src="images/logo.svg" alt="Яндекс.Практикум"/>
+            <h1 class="header__title">Научиться учиться</h1>
+            <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link" href="#">Узнать →</a></p>
+            <img class="header__main-illustration" src="images/two_again.png" alt="Яндекс.Практикум"/>
+            <div class="header__square-pic"></div>
+        </header>
+        <main class="content">
+            <section class="description">
+                <div class="two-columns">
+                    <!-- Можно лучше: Здесь лучше подойдет следующий по иерархии (после <h1>) заголовок - <h2>  -->
+                    <h3 class="two-columns__brief">Главные проблемы в обучении</h3>
+                    <div class="two-columns__main-text">
+                        <p class="two-columns__paragraph">
+                            Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы
+                            готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи,
+                            чтобы лучше сдать тест, но часто в итоге это не даёт нам реального знания. Зубрёжка
+                            быстро выветривается и не приносит пользы.
+                        </p>
+                        <p class="two-columns__paragraph">
+                            <span class="span-size">Вывод:</span> учиться тоже нужно уметь, но почему-то
+                            этому мало где учат.Что с этим делать?
+                        </p>
+                        <p class="two-columns__paragraph">
+                            Конкретные техники и упражнения помогают изменить подход к обучению, сделать его
+                            эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="technics">
+                <h2 class="section-title">Техники обучения</h2>
+                <h3 class="section-subtitle">Пять практик от Барбары Оакли</h3>
+                <div class="cards">
+                    <div class="cards__cards-inner">
+                        <div class="cards__item">
+                            <img class="cards__image" src="images/attention.png" alt="Яндекс.Практикум"/>
+                            <h3 class="cards__title">Два вида внимания</h3>
+                            <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
+                        </div>
+                        <div class="cards__item">
+                            <img class="cards__image" src="images/recall.png" alt="Яндекс.Практикум"/>
+                            <h3 class="cards__title">Recall</h3>
+                            <p class="cards__description">Вспоминайте изученное-это позволит соединить разрозненные порции памяти.</p>
+                        </div>
+                        <div class="cards__item">
+                            <img class="cards__image" src="images/interliving.png" alt="Яндекс.Практикум"/>
+                            <h3 class="cards__title">Интерливинг</h3>
+                            <p class="cards__description">Изучайте несколько навыков одновременно, они обогощают друг друга.</p>
+                        </div>
+                        <div class="cards__item">
+                            <img class="cards__image" src="images/question.png" alt="Яндекс.Практикум"/>
+                            <h3 class="cards__title">Вопросы</h3>
+                            <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+                        </div>
+                        <div class="cards__item">
+                            <!-- Надо исправить: Документ не проходит проверку на валидность (https://validator.w3.org/nu/#file)
+                            из-за отсутствия атрибута alt у изображения -->
+                            <img class="cards__image" src="images/competence.png"/>
+                            <h3 class="cards__title">Иллюзия компетентности</h3>
+                            <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video">
+                <h2 class="section-title">Видео на TED</h2>
+                <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
+                <div class="video__iframes">
+                    <!-- Надо исправить: Документ не проходит проверку на валидность (https://validator.w3.org/nu/#file)
+                     из-за наличия устаревшего атрибута 'frameborder'. Вместо этого убрать рамку можно с помощью border: 0 в CSS -->
+                    <!-- Можно лучше: Лишние обертки над iframe'ами. Можно их убрать, а классы добавить айфреймам. -->
+                    <div class="video__iframe">
+                        <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video__iframe">
+                        <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="oakley">
+                <div class="two-columns">
+                    <!-- Можно лучше: Этот заголовок той же иерархии что и 'section-title' -->
+                    <h3 class="two-columns__brief">История Барбары Оакли</h3>
+                    <div class="two-columns__main-text">
+                        <p class="two-columns__paragraph">
+                            С детства Барбаре не давалась математика. Она считала себя законченным
+                            гуманитарием, причём далеко не самым умным. В армии рна изучила русский язык,
+                            чтобы получить надбавку, да так успешно, что её выдвинули в командиры. Но для
+                            продвижения по службе нужно было сдавать математику. И тогда Барбара придумала
+                            свой подход к точным наукам. Оказалось, если вам что-то "плохо даётся", ваши добытые
+                            трудом знания гораздо глубже, чем у тех, кому всё ясно с первого взгляда.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feinman">
+                <h2 class="feinman__title">Метод Фейнмана</h2>
+                <h3 class="feinman__subtitle">Выучить и не забыть.</h3>
+                <a class="feinman__link" href="#">Подробнее →</a>
+                <img class="feinman__illustration" src="images/feinman.png" alt="Яндекс.Практикум"/>
+            </section>
+
+            <section class="digits">
+                <h2 class="section-title">Цифры и факты</h2>
+                <h3 class="section-subtitle">Про учёбу и мозг</h3>
+                <div class="table">
+                    <div class="table__cell">
+                        <h3 class="table__heading">86 миллиардов</h3>
+                        <p class="table__text">Число нейронов в мозге человека</p>
+                    </div>
+                    <div class="table__cell">
+                        <h3 class="table__heading">2,1 миллиарда</h3>
+                        <p class="table__text">Число нуждающихся в повышении квалификации</p>
+                        <p class="table__text">Всемирный Банк, 2017</p>
+                    </div>
+                    <div class="table__cell">
+                        <h3 class="table__heading">1000 терабайт</h3>
+                        <p class="table__text">Объём памяти человека</p>
+                    </div>
+                    <div class="table__cell">
+                        <h3 class="table__heading">500 триллионов</h3>
+                        <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
+                    </div>
+                    <div class="table__cell">
+                        <h3 class="table__heading">420 миллионов</h3>
+                        <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
+                        <p class="table__text">Всемирный Банк, 2017</p>
+                    </div>
+                    <div class="table__cell">
+                        <h3 class="table__heading">17-20 лет</h3>
+                        <p class="table__text">Пик обучаемости</p>
+                    </div>
+                    <div class="table__cell">
+                        <h3 class="table__heading">1885 год</h3>
+                        <p class="table__text">Открытие кривой забывания</p>
+                    </div>
+                    <div class="table__cell">
+                        <h3 class="table__heading">1889 год</h3>
+                        <p class="table__text">Открытие условного рефлекса</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="khan">
+                <div class="khan__container">
+                    <!-- Можно лучше: Слишком много заголовков :). По сути, заголовком здесь является только элемент 'khan__title',
+                     а остальные - <p> -->
+                    <h3 class="khan__author">Салман Хан</h3>
+                    <h2 class="khan__title">Весь мир - школа</h2>
+                    <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения
+                        миллионов студентов по всему миру. Книгу "Весь мир - школа"
+                        нужно прочитать всем, кто занимается образованием - так
+                        учащиеся повсюду смогут получить навыки и знания, которые
+                        приносят успех в школе, карьере и жизни.
+                    </p>
+                    <h3 class="khan__quote-author">Джордж Лукас</h3>
+                    <h3 class="khan__quote-author-subline">Кинорежиссёр, продюсер</h3>
+                    <div class="khan__book-container">
+                        <img src="images/book.jpg" class="khan__book-pic" alt="Яндекс.Практикум"/>
+                        <a class="khan__buy-link" href="#">Купить Книгу →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="kaufman">
+                <h2 class="section-title section-title_color_white">Принципы обучения</h2>
+                <h3 class="section-subtitle section-subtitle_color_white">от Джоша Кауфмана</h3>
+                <div class="table table_color_white">
+                    <div class="table__cell table__cell_color_white">
+                        <h3 class="table__heading table__heading_color_white">1</h3>
+                        <p class="table__text table__text_color_white">Выберите прилекательный проект.</p>
+                    </div>
+                    <div class="table__cell table__cell_color_white">
+                            <h3 class="table__heading table__heading_color_white">2</h3>
+                            <p class="table__text table__text_color_white">Сосредоточьтесь на каком-то одном навыке.</p>
+                    </div>
+                    <div class="table__cell table__cell_color_white">
+                            <h3 class="table__heading table__heading_color_white">3</h3>
+                            <p class="table__text table__text_color_white">Определите целевой уровень мастерства.</p>
+                    </div>
+                    <div class="table__cell table__cell_color_white">
+                            <h3 class="table__heading table__heading_color_white">4</h3>
+                            <p class="table__text table__text_color_white">Разбейте навыки на элементы.</p>
+                    </div>
+                    <div class="table__cell table__cell_color_white">
+                            <h3 class="table__heading table__heading_color_white">5</h3>
+                            <p class="table__text table__text_color_white">Приготовьте всё необходимое для занятий.</p>
+                    </div>
+                    <div class="table__cell table__cell_color_white">
+                            <h3 class="table__heading table__heading_color_white">6</h3>
+                            <p class="table__text table__text_color_white">Устраните препятствия для занятий.</p>
+                    </div>
+                    <div class="table__cell table__cell_color_white">
+                            <h3 class="table__heading table__heading_color_white">7</h3>
+                            <p class="table__text table__text_color_white">Выделите специальное время для занятий.</p>
+                    </div>
+                    <div class="table__cell table__cell_color_white">
+                            <h3 class="table__heading table__heading_color_white">8</h3>
+                            <p class="table__text table__text_color_white">Создайте быстрые петли обратной связи.</p>
+                    </div>
+                    <div class="table__cell table__cell_color_white">
+                            <h3 class="table__heading table__heading_color_white">9</h3>
+                            <p class="table__text table__text_color_white">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
+                    </div>
+                    <div class="table__cell table__cell_color_white">
+                            <h3 class="table__heading table__heading_color_white">10</h3>
+                            <p class="table__text table__text_color_white">Уделяйте внимание количеству и скорости.</p>
+                    </div>
+                </div>
+                <img class="kaufman__triangle" src="images/triangle.svg" alt="Яндекс.Практикум"/>
+            </section>
+
+            <section class="resources">
+                <h2 class="section-title">Полезные ресурсы</h2>
+                <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
+                <div class="resources__logo-zone">
+                    <img class="resources__logo" src="images/logo/arzamas.svg" alt="Яндекс.Практикум"/>
+                    <img class="resources__logo" src="images/logo/n1.svg" alt="Яндекс.Практикум"/>
+                    <img class="resources__logo" src="images/logo/strelka.svg" alt="Яндекс.Практикум"/>
+                    <img class="resources__logo" src="images/logo/polka.svg" alt="Яндекс.Практикум"/>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__columns">
+                <!-- Можно лучше: С точки зрения методологии БЭМ здесь не хватает класса самого элемента 'footer__column',
+                 присутствует только его класс-модификатор. Замечание применимо и к остальным(*_info, *_social) элементам -->
+                <div class="footer__column_copyright">
+                    <img class="logo logo__footer" src="images/logo_white.svg" alt="Яндекс.Практикум"/>
+                    <p class="footer__author">© 2019. Зеленин Антон Михайлович</p>
+                </div>
+                <div class="footer__column_info">
+                    <h3 class="footer__column-heading">О Практикуме</h3>
+                    <div class="footer__column-links">
+                        <a class="footer__column-link" href="#">Главная</a>
+                        <a class="footer__column-link" href="#">Концепция</a>
+                        <a class="footer__column-link" href="#">Наставники</a>
+                    </div>
+                </div>
+                <div class="footer__column_social">
+                    <h3 class="footer__column-heading">Соцсети</h3>
+                    <div class="footer__column-links">
+                        <a class="footer__column-link" href="#"><img class="footer__social-icons" src="images/facebook_white.svg" alt="Яндекс.Практикум"> Facebook</a>
+                        <a class="footer__column-link" href="#"><img class="footer__social-icons" src="images/vk_white.svg" alt="Яндекс.Практикум"> ВКонтакте</a>
+                        <a class="footer__column-link" href="#"><img class="footer__social-icons" src="images/instagram_white.svg" alt="Яндекс.Практикум"> Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+<!-- Общие впечатления и резюме по работе:
+    Работа выполнена на очень хорошем уровне. Вы молодец! Размечен весь макет, код написан аккуратно, верно подключены анимации
+    и плавные переходы, страница внешне соответствует макету. Есть несколько замечаний, которые нужно поправить.
+
+    Замечания, обозначенные как 'Надо исправить' - критичные и обязательны к исправлению,
+    'Можно лучше' - помогут улучшить работу, но не являются обязательными (но лучше обратить внимание и на них :))
+
+    Что важно исправить:
+
+    1) Документ не проходит проверку на валидность (https://validator.w3.org/nu/#file) из-за:
+    - наличия у iframe'ов устаревшего атрибута 'frameborder'. Его нужно убрать, а рамки убрать с помощью CSS
+    - отсутствия у одного из изображений 'cards__image' атрибута alt
+    2) Поправить стили в отмеченных местах в style.css, для полного соответствия макету
+        - верхний внутренний отступ блоку 'digits'
+        - изображение 'khan__book-pic'
+
+    Прошу после исправлений не удалять комментарии.
+-->

@@ -1,0 +1,573 @@
+@keyframes rotation {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.page {
+    min-width: 1100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+    height: 100vh;
+    min-height: 634px;
+    max-height: 756px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    height: 35px;
+    width: 183px;
+}
+
+.logo_header {
+    top: 30px;
+    left: 64px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #2f80ed;
+    opacity: 1;
+    transition: opacity .3s linear 0s;
+}
+
+.header__link:hover {
+    opacity: 0.5;
+}
+
+.header__title {
+    position: relative;
+    /* Можно лучше: margin-left: 64px; */
+    left: 64px;
+    width: 730px;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.header__subtitle {
+    position: absolute;
+    width: 388px;
+    left: 64px;
+    bottom: 30px;
+    z-index: 2;
+    line-height: 25px;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.header__main-illustration {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 608px;
+    /* Можно лучше: Опечатка в единицах измерения 'px' */
+    width: 765x;
+    z-index: 1;
+}
+
+.header__square-pic {
+    position: absolute;
+    top: 64px;
+    right: 0px;
+    height: 568px;
+    width: 568px;
+    background-position: center;
+    background-size: contain;
+    background-color: #2f80ed;
+    animation: rotation 20s linear infinite;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.two-columns {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-columns__brief {
+    width: 175px;
+    color: #2f80ed;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0px 0px 0px 0px;
+}
+
+.two-columns__main-text {
+    width: 80%;
+    min-width: 784px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.two-columns__paragraph {
+    line-height: 34px;
+    font-size: 24px;
+    font-style: normal;
+    margin: 0px 0px 30px 0px;
+}
+
+.two-columns__paragraph:last-child {
+    margin-bottom: 0px;
+
+}
+
+.span-size {
+    font-weight: bolder;
+    line-height: 34px;
+    font-size: 24px;
+}
+
+.technics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.cards {
+    width: 80%;
+}
+
+.cards__cards-inner {
+    width: 926px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards__item {
+    width: 240px;
+    margin: 60px 100px 0px 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cards__item:nth-child(3n) {
+    margin: 60px 0px 0px 0px;
+}
+
+.cards__image {
+    width: 160px;
+    height: 160px;
+    margin: 0px 40px;
+    border-radius: 50%;
+}
+
+.cards__title {
+    margin: 43px 0px 0px 0px;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cards__description {
+    margin: 16px 0px 0px 0px;
+    text-align: center;
+    line-height: 23px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.video__iframes {
+    position: relative;
+    top: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video__iframe {
+    width: 515px;
+    height: 316px;
+}
+
+.video__iframe:first-child {
+    margin: 0px 20px 0px 0px;
+}
+
+.oakley {
+    display: flex;
+    justify-content: center;
+    padding-top: 160px;
+    background-color: #f2f2f2;
+}
+
+/* Надо исправить: Добавить верхний внутренний отступ 100px в соответствии с макетом */
+.digits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.section-title {
+    width: 60%;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    width: 60%;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.table {
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.table__cell {
+    width: 250px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table__heading {
+    margin: 0px 0px 0px 0px;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.table__text {
+    margin: 20px 0px 0px 0px;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.feinman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 890px;
+    background-color: #F2F2F2;
+}
+
+.feinman__title {
+    text-align: center;
+    width: 648px;
+    margin: 100px 0px 0px 0px;
+    z-index: 1;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.feinman__subtitle {
+    text-align: center;
+    margin: 70px 0px 0px 0px;
+    z-index: 1;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.feinman__illustration {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 867px;
+    height: 637px;
+}
+
+.feinman__link {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    text-decoration: none;
+    color: black;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    opacity: 1;
+    transition: opacity .3s linear 0s;
+}
+
+.feinman__link:hover {
+    opacity: .5;
+}
+
+.khan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 105px;
+    background-color: #f2f2f2;
+}
+
+.khan__container {
+    width: 80%;
+}
+
+/* Можно лучше: Обнулить встроенный margin-top у элемента для соответствия макету */
+.khan__author {
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.khan__title {
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.khan__quote {
+    width: 790px;
+    margin-top:50px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* Можно лучше: line-height: 1.15 */
+.khan__quote-author {
+    margin-top:36px;
+    line-height: 1.15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Можно лучше: line-height: 1.15 */
+.khan__quote-author-subline {
+    margin-top:10px;
+    line-height: 1.15px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.khan__book-container {
+    margin-top:68px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Надо исправить: Сравните внешний вид изображения с брифом/макетом. Как мы видим, оно
+немного искажено. Есть 2 пути:
+1. или оспользоваться свойствами object-fit: cover и object-position: top;
+2. или задать изображение фоном
+*/
+.khan__book-pic {
+    width: 620px;
+    height: 608px;
+    margin-right: 20px;
+}
+
+.khan__buy-link {
+    text-decoration: none;
+    color: #2f80ed;
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+    opacity: 1;
+    transition: opacity .3s linear 0s
+}
+
+.khan__buy-link:hover {
+    opacity: .5;
+}
+
+.kaufman {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #1F1F1F;
+}
+
+.section-title_color_white {
+    width: 60%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.section-subtitle_color_white {
+    width: 60%;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.table__cell_color_white {
+    width: 200px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table__heading_color_white {
+    margin: 0px 0px 0px 0px;
+    color: white;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.table__text_color_white {
+    margin: 20px 0px 0px 0px;
+    color: white;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+
+}
+
+.kaufman__triangle {
+    width: 877px;
+    height: 877px;
+    position: absolute;
+    top: 0px;
+    right: -210px;
+    animation: rotation 20s linear infinite;
+}
+
+.resources {
+    padding-top: 100px;
+    padding-bottom: 217px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resources__logo-zone {
+    width: 1100px;
+    margin-top: 80px;
+}
+
+.resources__logo {
+    width: 270px;
+    height: 38px;
+}
+
+.footer {
+    min-height: 350px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #1F1F1F;
+    justify-content: center;
+    display: flex;
+
+}
+
+.footer__columns {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.footer__column_copyright {
+    flex-basis: 711px;
+    position: relative;
+}
+
+.footer__author {
+    margin: 18px 0px 18px 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer__column_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column-heading {
+    margin: 0px 0px 0px 0px;
+    color: white;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer__column-links {
+    margin: 20px 0px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__column-link {
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    opacity: 1;
+    transition: opacity .3s linear 0s;
+}
+
+.footer__column-link:hover {
+    opacity: .5;
+}
+
+.footer__column_social {
+    display: flex;
+    flex-direction: column;
+}
+
